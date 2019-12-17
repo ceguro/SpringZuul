@@ -1,0 +1,8 @@
+zuul:
+  routes:
+    test1:
+      path: /api/first/**
+      url: http://localhost:8081/api2/answer1
+    test2:
+      path: /api/second/**
+      url: http://localhost:8081/api2/answer2
