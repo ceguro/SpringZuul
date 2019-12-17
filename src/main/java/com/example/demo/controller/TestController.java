@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 public class TestController {
     Logger log = LoggerFactory.getLogger(TestController.class);
 
-    @RequestMapping(path = "/api", method = {})
+//    @RequestMapping(path = "/api", method = {})
     public String test(HttpServletRequest request) {
 
         // check values
