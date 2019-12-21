@@ -1,4 +1,8 @@
 zuul:
+  ignoredServices: '*'
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
   routes:
     test1:
       path: /api/first/**
@@ -6,3 +10,12 @@ zuul:
     test2:
       path: /api/second/**
       url: http://localhost:8081/api2/answer2
+    test3:
+      path: /api/third/**
+      url: http://localhost:8081/api2/
+    test4:
+      path: /api/fourth/**
+      url: http://localhost:8081/api2/
+    test5:
+      path: /api/fifth/**
+      url: http://localhost:8081/api2/
