@@ -4,7 +4,7 @@ import com.example.demo.FilterType;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.exception.ZuulException;
 
-public class FilterOne extends ZuulFilter {
+public class FilterPosMaster extends ZuulFilter {
 
     @Override
     public String filterType() {

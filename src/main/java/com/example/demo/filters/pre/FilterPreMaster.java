@@ -1,4 +1,4 @@
-package com.example.demo.filters;
+package com.example.demo.filters.pre;
 
 import com.example.demo.FilterType;
 import com.netflix.zuul.ZuulFilter;
@@ -6,7 +6,7 @@ import com.netflix.zuul.context.RequestContext;
 
 import javax.servlet.http.HttpServletRequest;
 
-public class FilterMaster extends ZuulFilter {
+public class FilterPreMaster extends ZuulFilter {
 
     @Override
     public String filterType() {
