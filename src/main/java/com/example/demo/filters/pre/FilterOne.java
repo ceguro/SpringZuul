@@ -1,6 +1,6 @@
 package com.example.demo.filters.pre;
 
-import com.example.demo.FilterType;
+import com.example.demo.util.FilterType;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import org.slf4j.Logger;

@@ -11,17 +11,17 @@ import org.springframework.context.annotation.Configuration;
 public class FiltersConfig {
 
     @Bean
-    public FilterPreMaster simpleFilter() {
+    public FilterPreMaster filterPreMaster() {
         return new FilterPreMaster();
     }
 
     @Bean
-    public FilterOne simpleFilter1() {
+    public FilterOne filterOnePre() {
         return new FilterOne();
     }
 
     @Bean
-    public FilterTwo simpleFilter2() {
+    public FilterTwo filterTwoPre() {
         return new FilterTwo();
     }
 }
