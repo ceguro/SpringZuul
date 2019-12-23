@@ -9,9 +9,9 @@ import org.slf4j.LoggerFactory;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Enumeration;
 
-public class FilterTwo extends ZuulFilter {
+public class FilterPreTwo extends ZuulFilter {
 
-    Logger log = LoggerFactory.getLogger(FilterTwo.class);
+    Logger log = LoggerFactory.getLogger(FilterPreTwo.class);
 
     @Override
     public boolean shouldFilter() {
