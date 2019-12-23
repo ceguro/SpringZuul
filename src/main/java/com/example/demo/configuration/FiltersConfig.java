@@ -2,6 +2,8 @@ package com.example.demo.configuration;
 
 
 import com.example.demo.filters.pos.FilterPosMaster;
+import com.example.demo.filters.pos.FilterPosOne;
+import com.example.demo.filters.pos.FilterPosTwo;
 import com.example.demo.filters.pre.FilterPreMaster;
 import com.example.demo.filters.pre.FilterPreOne;
 import com.example.demo.filters.pre.FilterPreTwo;
@@ -29,5 +31,16 @@ public class FiltersConfig {
     @Bean
     public FilterPreTwo filterTwoPre() {
         return new FilterPreTwo();
+    }
+
+
+    @Bean
+    public FilterPosOne filterOnePos() {
+        return new FilterPosOne();
+    }
+
+    @Bean
+    public FilterPosTwo filterTwoPos() {
+        return new FilterPosTwo();
     }
 }
