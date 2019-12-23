@@ -3,10 +3,14 @@ package com.example.demo.filters.pre;
 import com.example.demo.util.FilterType;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.servlet.http.HttpServletRequest;
 
 public class FilterPreMaster extends ZuulFilter {
+
+    Logger log = LoggerFactory.getLogger(FilterPreMaster.class);
 
     @Override
     public String filterType() {
@@ -32,7 +36,7 @@ public class FilterPreMaster extends ZuulFilter {
         var makeAuthenticate = requestURI.contains("oauth");
 
         if (makeAuthenticate) {
-            //metodoautenticar
+            log.info("request must be authenticate");
         }
 
         if (shouldExecuteFilter1(request)) {
