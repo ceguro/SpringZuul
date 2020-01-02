@@ -4,6 +4,7 @@ Spring REST with a Zuul Proxy
 
 when each curl is executed they are redirected to the respective controller method, the verb does not matter.
 
+# Requests to make test:
 
  curl -X POST \
           http://localhost:8081/api/fifth/3/answer6/ejemplo \
